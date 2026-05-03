@@ -334,6 +334,7 @@ img { max-width: 100%; height: auto; display: block; }
   margin: 0 auto;
   position: relative;
   z-index: 1;
+  flex-shrink: 0;
 }
 
 .hero-kicker {
@@ -483,7 +484,7 @@ article.post-shortie::before { display: none; }
   font-size: 16px;
   line-height: 1.4;
   color: var(--text-2);
-  font-family: var(--font-sans-serif);
+  font-family: var(--font-sans-serif), sans-serif;
 }
 
 .shortie-content p:last-child { margin-bottom: 0; }
@@ -1574,46 +1575,7 @@ article, .about-block, .tag, .pagination-btn,
               border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* =====================================================
-   RESPONSIVE
-===================================================== */
-@media (max-width: 860px) {
-  #page {
-    grid-template-columns: 1fr;
-    gap: 40px;
-    padding: 32px 20px;
-  }
 
-  #secondary {
-    position: static;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-  }
-
-  .about-block { grid-column: 1 / -1; }
-
-  #hero::before, #hero::after { display: none; }
-}
-
-@media (max-width: 580px) {
-  .header-inner { padding: 0 16px; gap: 12px; }
-
-  #primary-menu li a { padding: 5px 9px; font-size: 13px; }
-
-  #hero { padding: 44px 16px 56px; }
-
-  #page { padding: 24px 16px; }
-
-  #secondary { display: flex; flex-direction: column; }
-
-  article.post-card.is-featured { padding: 20px; }
-
-  .author-box { flex-direction: column; }
-
-  .post-navigation { flex-direction: column; }
-  .post-navigation .nav-next { text-align: left; }
-}
 
 /* =====================================================
    WORDPRESS ALIGNMENTS & GUTENBERG BASICS
@@ -1653,7 +1615,7 @@ article, .about-block, .tag, .pagination-btn,
   left: -130px;
   top: 50%;
   transform: translateY(-50%);
-  z-index: -2;
+  z-index: 2;
 }
 
 .hero-stamp img {
@@ -1683,16 +1645,8 @@ article, .about-block, .tag, .pagination-btn,
   overflow: hidden;
   width: 0;
   opacity: 0;
-  transition: width 0.35s ease, opacity 0.35s ease;
-}
-
-.header-stamp {
-  flex-shrink: 0;
-  overflow: hidden;
-  width: 0;
-  opacity: 0;
-  transition: width 0.35s ease, opacity 0.35s ease;
   margin-right: 0;
+  transition: width 0.35s ease, opacity 0.35s ease;
 }
 
 .header-stamp img {
@@ -1706,14 +1660,9 @@ article, .about-block, .tag, .pagination-btn,
 
 /* Hero out of viewport, or page without hero */
 #site-header.stamp-visible .header-stamp {
-  width: 44px;
-  opacity: 1;
-}
-
-#site-header.stamp-visible .header-stamp {
   width: 36px;
   opacity: 1;
-  margin-right: -20px;  /* space between stamp and title */
+  margin-right: -20px;
 }
 
 /* Hide image when it has moved into header */
@@ -1722,10 +1671,61 @@ article, .about-block, .tag, .pagination-btn,
   pointer-events: none;
 }
 
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
 @media (max-width: 1300px) {
-  .hero-stamp { left: 755px; }
+  .hero-stamp {
+    left: auto;
+    right: 24px;
+  }
+}
+
+@media (max-width: 860px) {
+  #page {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 32px 20px;
+  }
+
+  #secondary {
+    position: static;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+
+  .about-block { grid-column: 1 / -1; }
+
+  #hero::before, #hero::after { display: none; }
+}
+
+@media (max-width: 750px) {
+  .hero-stamp {
+    left: auto;
+    right: 24px;
+  }
 }
 
 @media (max-width: 580px) {
+  .header-inner { padding: 0 16px; gap: 12px; }
+
+  #primary-menu li a { padding: 5px 9px; font-size: 13px; }
+
+  #hero { padding: 44px 16px 56px; }
   .hero-stamp { display: none; }
+
+  .site-name .motto { font-size: 35%; flex-shrink: 1;}
+
+  #page { padding: 24px 16px; }
+
+  #secondary { display: flex; flex-direction: column; }
+
+  article.post-card.is-featured { padding: 20px; }
+
+  .author-box { flex-direction: column; }
+
+  .post-navigation { flex-direction: column; }
+  .post-navigation .nav-next { text-align: left; }
 }
