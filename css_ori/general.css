@@ -1,0 +1,81 @@
+/* General typography
+ ********************************************************************/
+body {
+	font-family: Verdana, sans-serif;
+	font-size: 100.01%;
+	text-align: justify;
+	color:#303060;
+}
+
+#wrap {
+	font: 0.8em/150% Verdana;
+}
+
+
+h1 {
+	margin:0;
+	padding:0;
+}
+
+h2 {
+	font-size: 120%;
+	margin-top: 1.5em;
+	border-bottom: 1px dashed #100884;
+	padding-left: 15px;
+	background: white url(images/h2back.gif) 0 6px repeat-x;
+}
+
+h2:hover {
+	background-position:0 1px;
+}
+
+h4 {
+	font-size: 100%;
+	margin-top: 1.5em;
+	background: white url(images/h2back.gif) 0 6px repeat-x;
+	width:30%;
+	clear:both;
+}
+
+
+a {
+	color: #100884;
+	text-decoration: none;
+}
+
+a img {
+	border: none;
+}
+
+a.img:link, a.img:visited, a.img:hover, a.img:active {
+	border: 0;
+}
+
+code, .mycode {
+	font-family: monospace;
+	font-size:11px;
+	text-align: left;
+	margin: 0px 0px 10px 10px;
+	padding: 3px;
+	border: white dotted 1px;
+	overflow: auto;
+	display: block;
+	white-space:pre;
+	width:500px;
+}
+
+blockquote {
+	color:#666666;
+	font-style:italic;
+	border-left: 4px solid #eef;
+	padding-left:1em;
+	background: transparent url(images/quote.png) -5px -10px no-repeat;
+}
+
+div.message {
+	background: transparent url(images/info.png) center left no-repeat;
+	border:2px solid #6DB6F4;
+	padding:0.2em 1em 0.2em 60px;
+	color:#6DB6F4;
+	-moz-border-radius:15px;
+}

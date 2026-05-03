@@ -1,0 +1,31 @@
+#sidebar #btn_feedicon a {
+text-indent:-9999px;
+width:88px;
+height:88px;
+background:url(images/feed-icon.png) no-repeat 0 0;
+display:block;
+margin-bottom:10px;
+}
+
+#sidebar #btn_feedicon a:hover {
+background-position:0 -88px
+}
+
+#sidebar .buttons a {
+text-indent:-9999px;
+border-bottom:0 !important;
+margin-bottom:5px;
+display: block;
+width:80px;
+height:15px;
+}
+
+#sidebar #btn_planetozh a {
+background:url(https://planetozh.com/images/buttons/btn_planetozh.png) no-repeat 0 0;
+}
+
+#sidebar #btn_frefrafac a {
+width:80px;
+height:15px;
+background:url(https://planetozh.com/images/buttons/btn-frefrafac.png) no-repeat 0 0;
+}

@@ -1,0 +1,67 @@
+/* 1337 Buttons
+ ********************************************************************/
+
+#sidebar #feeds {
+	padding: 0;
+	margin: 0;
+	clear:both;
+}
+
+#sidebar #feeds a {
+  text-indent: -9999px;
+  float: left;
+  margin-left: 20px;
+  border-bottom: 0px !important;
+}
+
+#sidebar #feeds a:focus, #sidebar .buttons a:focus {
+  -moz-outline-style: none;
+}
+
+
+#btn_feedburner {
+	margin:20px;
+}
+
+#sidebar #btn_feedicon a {
+  width: 88px;
+  height: 88px;
+	background: url(images/feed-icon.png) no-repeat 0 0;
+}
+#sidebar #btn_feedicon a:hover {
+	background-position:0px -88px;
+}
+
+#sidebar #btn_feedburner a {
+  width: 93px;
+  height: 52px;
+	background: url(http://planetozh.com/images/feedicon/feedicon.php) no-repeat 0 0;
+}
+
+#sidebar #feedemail a {
+  width: 93px;
+  height: 31px;
+  margin-top:7px;
+	background: url(images/rss_to_email.png) no-repeat 0 0;
+}
+#sidebar #feedemail a:hover {
+	background-position:0px -41px;
+}
+
+#sidebar .buttons {
+  text-indent: -9999px;
+  border-bottom: 0px !important;
+  margin-bottom: 5px;
+}
+
+#sidebar #btn_planetozh {
+  width: 80px;
+  height: 15px;
+	background: url(http://planetozh.com/images/buttons/btn_planetozh.png) no-repeat 0 0;
+}
+
+#sidebar #btn_frefrafac {
+  width: 80px;
+  height: 15px;
+	background: url(http://planetozh.com/images/buttons/btn-frefrafac.png) no-repeat 0 0;
+}

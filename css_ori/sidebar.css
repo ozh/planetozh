@@ -1,0 +1,203 @@
+/* Sidebar
+ ********************************************************************/
+
+#sidebar {
+	font: 10px/120% Verdana;
+	color: #9894CA;
+}
+
+#sidebar div div {
+	padding:0 25px 0 20px;
+}
+
+#sidebar div a {
+	color: #66a;
+}
+
+#sidebar div a:hover {
+	text-decoration: underline;
+	color: #100884;
+}
+
+#sidebar h3 {
+	margin: 0 0 5px 0;
+	font-family: 'Lucida Sans Unicode',sans-serif,verdana,geneva,arial;
+	font-size: 12px;
+	font-weight: bold;
+	color:#9894CA;
+	clear:both;
+	text-indent:20px;
+}
+
+#sidebar div.firstblock {
+	background: transparent url(images/sidebar-top.png) top left no-repeat;
+	padding-top:15px;
+}
+
+#sidebar div.block h3 {
+	line-height: 90px;
+	height:55px;
+	width:343px;
+	background: transparent url(images/sidebar-h3.png) top left no-repeat;
+}
+
+#sidebar div.halfblock h3 {
+	line-height: 90px;
+	height:55px;
+	width:343px;
+	background: transparent url(images/sidebar-h3-half.png) top left no-repeat;
+}
+
+#sidebar hr {
+	height:0px;
+	visibility:hidden;
+	clear:both;
+	width:333px;
+}
+
+#sidebar li {
+	word-wrap: break-word;
+}
+
+#sidebar ul {
+list-style-type:none;
+padding:0;
+margin:0;
+text-indent:0px;
+}
+
+/* Sidebar Elements
+ ********************************************************************/
+
+#month ul {
+list-style-type:none;
+padding:0;
+margin:0;
+text-indent:0px;
+}
+
+#month ul li {
+font-size:10px;
+font-family:'Lucida Console','Lucida Sans Unicode',Verdana,Geneva;
+padding:0;
+margin:0;
+width:90px;
+}
+
+#sidebar .col1, #sidebar .col2, #sidebar .col3 {
+	width:95px;
+	padding:0;
+	margin:0;
+	float:left;
+}
+
+#allarchives {
+clear:both;
+margin-top:1em;
+}
+
+#cloud div {
+margin-bottom:1em;
+text-align:center;
+}
+
+#cloud span {line-height:18px}
+
+
+/* Search
+ ********************************************************************/
+
+#search ul li {
+	padding: 0 1em 0 1em;
+}
+
+#searchform {
+	text-align: center;
+	width: 110px;
+	padding: 0;
+	margin: 0;
+	height:auto !important;
+	height: 1%;
+	overflow: hidden;
+}
+
+#search input {
+	background: #eee;
+	border: 1px solid #999;
+	letter-spacing: -0.05em;
+	font-size: 10px;
+}
+
+#s {
+	width: 93px;
+	float: left;
+	-moz-border-radius-topleft: 0.5em;
+	-moz-border-radius-bottomleft: 0.5em;
+	padding: 0.1em;
+}
+
+#searchsubmit {
+	width: 12px;
+	float: right;
+	-moz-border-radius-topright: 0.5em;
+	-moz-border-radius-bottomright: 0.5em;
+	padding: 0;
+}
+
+#search input:focus {
+	background: url(images/transparent.gif);
+	border: 1px solid white;
+}
+
+#search input:hover {
+	border: 1px solid #100884;
+}
+
+#search fieldset {
+	border: 0px;
+	margin:0;
+	padding:0;
+}
+
+
+/* Adsense
+ ********************************************************************/
+ 
+#sidebar .sidebarblank {
+	background: #fff url();
+}
+
+#sidebar .googlesearch {
+	background: #fff url();
+	text-align:center;
+	padding-left:20px;
+}
+
+#sidebar div.adsense320x250sidebar {
+	padding:0;
+	margin:0;
+	background:#fff url(images/adsense_300x250.gif) 5px 8px no-repeat;
+	text-align:left;
+}
+
+div.adsense320x250sidebar div {
+	padding:0;
+	margin:0;
+}	
+
+#sidebar div.adsense320x250sidebar:hover {
+	background-position:7px 8px;
+}
+
+.adsense336x280index {
+	background:#fff url(images/adsense_300x250.gif) 5px 15px no-repeat;
+	margin:0 0 20px 0;
+}
+
+.adsense336x280index:hover {
+	background-position:7px 15px;
+}
+
+.adsense336x280index div {
+	margin-left:20px;
+}

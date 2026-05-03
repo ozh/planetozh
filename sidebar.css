@@ -1,0 +1,191 @@
+#sidebar {
+font:10px/120% Verdana;
+color:#9894CA
+}
+
+#sidebar div div {
+padding:0 25px 0 20px
+}
+
+#sidebar div a {
+color:#66a
+}
+
+#sidebar div a:hover {
+text-decoration:underline;
+color:#100884
+}
+
+#sidebar h3 {
+font-family:'Lucida Sans Unicode',sans-serif,verdana,geneva,arial;
+font-size:12px;
+font-weight:700;
+color:#9894CA;
+clear:both;
+text-indent:20px;
+margin:0 0 5px
+}
+
+#sidebar div.firstblock {
+background:transparent url(images/sidebar-top.png) top left no-repeat;
+padding-top:15px
+}
+
+#sidebar div.block h3 {
+line-height:90px;
+height:55px;
+width:343px;
+background:transparent url(images/sidebar-h3.png) top left no-repeat
+}
+
+#sidebar div.halfblock h3 {
+line-height:90px;
+height:55px;
+width:343px;
+background:transparent url(images/sidebar-h3-half.png) top left no-repeat
+}
+
+#sidebar hr {
+height:0;
+visibility:hidden;
+clear:both;
+width:333px
+}
+
+#sidebar li {
+word-wrap:break-word
+}
+
+#sidebar ul {
+list-style-type:none;
+text-indent:0;
+margin:0;
+padding:0
+}
+
+#month ul {
+list-style-type:none;
+text-indent:0;
+margin:0;
+padding:0
+}
+
+#month ul li {
+font-size:10px;
+font-family:'Lucida Console','Lucida Sans Unicode',Verdana,Geneva;
+width:90px;
+margin:0;
+padding:0
+}
+
+#sidebar .col1,#sidebar .col2,#sidebar .col3 {
+width:95px;
+float:left;
+margin:0;
+padding:0
+}
+
+#flagbar a {margin-right:3px;}
+#flagbar a:hover {border-bottom:3px solid #9894ca}
+
+#allarchives {
+clear:both;
+margin-top:1em
+}
+
+#cloud div {
+margin-bottom:1em;
+text-align:center
+}
+
+#cloud span {
+line-height:18px
+}
+
+#search ul li {
+padding:0 1em
+}
+
+#searchform {
+text-align:center;
+width:110px;
+height:auto !important;
+overflow:hidden;
+margin:0;
+padding:0
+}
+
+#search input {
+background:#eee;
+border:1px solid #999;
+letter-spacing:-0.05em;
+font-size:10px
+}
+
+#s {
+width:93px;
+float:left;
+-moz-border-radius-topleft:0.5em;
+-moz-border-radius-bottomleft:0.5em;
+padding:0.1em
+}
+
+#searchsubmit {
+width:12px;
+float:right;
+-moz-border-radius-topright:0.5em;
+-moz-border-radius-bottomright:0.5em;
+padding:0
+}
+
+#search input:focus {
+background:url(images/transparent.gif);
+border:1px solid #FFF
+}
+
+#search input:hover {
+border:1px solid #100884
+}
+
+#search fieldset {
+border:0;
+margin:0;
+padding:0
+}
+
+#sidebar .sidebarblank {
+background:#fff url(images/white.gif);
+overflow:hidden;
+}
+
+#sidebar .googlesearch {
+background:#fff url();
+text-align:center;
+padding-left:20px
+}
+
+#sidebar div.adsense320x250sidebar {
+background:#fff;
+text-align:left;
+margin:0;
+padding:0
+clear:both;
+overflow:hidden;
+}
+
+#sidebar div.adsense320x250sidebar div {
+margin:0;
+padding:0 10px;
+}
+
+.adsense336x280index {
+background:#fff;
+margin:0 0 20px
+}
+
+.adsense336x280index div {
+margin-left:20px
+}
+
+#fads a {padding:10px 2px !important;}
+#fads {padding:2px 18px!important;}

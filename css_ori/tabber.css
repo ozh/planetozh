@@ -1,0 +1,119 @@
+/* Tabber
+ ********************************************************************/
+
+.tabberlive .tabbertabhide {
+ display:none;
+}
+
+/*--------------------------------------------------
+  .tabber = before the tabber interface is set up
+  .tabberlive = after the tabber interface is set up
+  --------------------------------------------------*/
+.tabberlive {
+	width:300px;
+	margin-top:1em !important;
+	margin-top:0px;
+}
+
+/*--------------------------------------------------
+  ul.tabbernav = the tab navigation list
+  li.tabberactive = the active tab
+  --------------------------------------------------*/
+#sidebar ul.tabbernav {
+	margin:0;
+	padding: 0;
+}
+
+#sidebar ul.tabbernav li {
+	list-style: none;
+	margin: 0;
+	display: inline;
+	padding:0 1px;
+	border-top:2px solid #E4F2FD;
+	border-left:1px solid #E4F2FD;
+	border-right:1px solid #E4F2FD;
+	-moz-border-radius-topleft:15px;
+	-moz-border-radius-topright:15px;
+	background:#EFFAFF;
+}
+
+#sidebar ul.tabbernav li:hover {
+	-moz-border-radius-topleft:15px;
+	-moz-border-radius-topright:15px;
+	border-top:2px solid #EFFAFF;
+	border-left:1px solid #EFFAFF;
+	border-right:1px solid #EFFAFF;
+	background:#fff;
+}
+
+#sidebar ul.tabbernav li a {
+	margin-left: 3px;
+	border-bottom: none;
+	text-decoration: none;
+	padding-left:10px;
+}
+
+#sidebar ul.tabbernav li a:hover {
+	text-decoration:none;
+	border-bottom:0px;
+	background:transparent url(images/rarr.png) 1px 3px no-repeat;
+}
+
+#sidebar ul.tabbernav li.tabberactive a {
+	background:transparent url(images/rarr.png) 0 3px no-repeat;
+}
+
+#sidebar ul.tabbernav:hover li.tabberactive a {
+	background:transparent;
+}
+
+#sidebar ul.tabbernav li.tabberactive a:hover {
+	background:transparent url(images/rarr.png) 0 3px no-repeat;
+}
+
+
+/*--------------------------------------------------
+  .tabbertab = the tab content
+  Add style only after the tabber interface is set up (.tabberlive)
+  --------------------------------------------------*/
+#sidebar .tabberlive .tabbertab {
+	padding:0;
+	margin:0;
+	-moz-border-radius-bottomleft:15px;
+	-moz-border-radius-bottomright:15px;
+	border:2px solid #EFFAFF;
+}
+
+#sidebar .tabberlive .tabbertab ul {
+	list-style-type:none;
+	padding:0;
+	margin:0px 0 0 0 ;
+}
+
+#sidebar .tabberlive .tabbertab ul li {
+	padding: 0 0 3px 10px;
+	background: transparent url(images/dot.gif) 0 4px no-repeat;
+	border-bottom:1px solid #E4F2FD;
+}
+
+#sidebar .tabberlive .tabbertab ul li:hover {
+	background: #EFFAFF url(images/dot.gif) 2px 4px no-repeat;
+	border-bottom:1px solid white;
+}
+
+
+#sidebar .tabberlive .tabbertab h2, .tabberlive .tabbertab h3, .tabberlive .tabbertab h4 {
+ display:none;
+}
+
+/* Example of using an ID to set different styles for the tabs on the page */
+.tabberlive#tab1 {
+}
+.tabberlive#tab2 {
+}
+.tabberlive#tab2 .tabbertab {
+ height:200px;
+ overflow:auto;
+}
+
+

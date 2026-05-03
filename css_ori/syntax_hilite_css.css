@@ -1,0 +1,43 @@
+.syntax_hilite, li .syntax_hilite {
+	padding:3px 3px 10px 8px;
+	border:1px solid #6DB6F4;
+	background-color:#FDFDFF;
+	font-size:11px; font-family:'Courier New',Courier,monospace;
+	overflow:hidden; white-space:nowrap;
+}
+
+.syntax_hilite:hover, li .syntax_hilite:hover {
+	overflow:auto;
+}
+
+/* change this line to set the width of code box */
+.syntax_hilite { width:550px; }
+/* change this line to set the width of code box in a list */
+li .syntax_hilite { width:500px; }
+.igBar, li .igBar {
+	background-color:#E4F2FD;
+	font-family:courier,arial,verdana;
+	border-left:1px solid #6DB6F4;
+	border-top:1px solid #6DB6F4;
+	border-right:1px solid #6DB6F4;
+	text-align:right;
+}
+/* change this line to set the width of plain text bar above code box */
+.igBar { width:561px; }
+/* change this line to set the width of plain text bar above code box in a list */
+li .igBar { width:511px; }
+.igBar a, .igBar a:hover {
+	margin:0px 5px 0px 10px;
+	font-weight:bold;
+	color:#000000;
+	text-decoration:none;
+}
+
+.igBar a {
+	font: 10px Verdana;
+}
+
+.syntax_hilite .langName { color:#6DB6F4; font-weight:bold; }
+.syntax_hilite textarea { margin:0px -5px -2px 0px; border:none; }
+
+.syntax_hilite li {	margin:0;padding:0;}

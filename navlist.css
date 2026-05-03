@@ -1,0 +1,121 @@
+#navlist {
+list-style-type:none;
+margin:14px 0 0;
+padding:0
+}
+
+#navlist li {
+float:left;
+height:45px
+}
+
+#navlist li.active {
+background:transparent url(images/navmark.png) bottom center no-repeat
+}
+
+#navlist li a {
+display:block;
+text-indent:-9999px;
+background-image:url(images/navmatrix.png);
+height:34px;
+margin:2px
+}
+
+#navlist li a:focus {
+-moz-outline-style:none
+}
+
+#nav-news {
+width:55px;
+background-position:0 0
+}
+
+#nav-archives {
+width:100px;
+background-position:-50px 0
+}
+
+#nav-gallery {
+width:86px;
+background-position:-151px 0
+}
+
+#nav-projects {
+width:97px;
+background-position:-237px 0
+}
+
+#nav-contact {
+width:93px;
+background-position:-337px 0
+}
+
+#nav-about {
+width:68px;
+background-position:-433px 0
+}
+
+#nav-news:hover {
+background-position:0 -38px
+}
+
+#nav-archives:hover {
+background-position:-50px -76px
+}
+
+#nav-gallery:hover {
+background-position:-151px -114px
+}
+
+#nav-projects:hover {
+background-position:-237px -152px
+}
+
+#nav-contact:hover {
+background-position:-337px -190px
+}
+
+#nav-about:hover {
+background-position:-433px -228px
+}
+
+#navlistmark {
+width:550px;
+height:10px;
+top:45px;
+position:relative
+}
+
+#navlistmark div {
+height:10px;
+float:left;
+margin:0px 5px 0 0
+}
+
+#navlistmark div.active {
+background:transparent url(images/navmark.png) top center no-repeat
+}
+
+#mark-news {
+width:55px
+}
+
+#mark-archives {
+width:100px
+}
+
+#mark-gallery {
+width:86px
+}
+
+#mark-projects {
+width:97px
+}
+
+#mark-contact {
+width:93px
+}
+
+#mark-about {
+width:68px
+}

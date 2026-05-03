@@ -1,0 +1,24 @@
+a.avatarpop,span.avatarpop {
+position:relative !important;
+text-decoration:none !important;
+border-bottom:1px dotted #FF0 !important
+}
+
+a.avatarpop img,span.avatarpop img {
+display:none !important
+}
+
+a.avatarpop:hover img,span.avatarpop:hover img {
+display:block !important;
+position:absolute !important;
+top:1.5em !important;
+z-index:100 !important;
+color:#ddd !important;
+background:#FFF !important;
+border-top:1px solid #ddd !important;
+border-right:1px solid #ddd !important;
+border-bottom:1px solid #555 !important;
+border-left:1px solid #555 !important;
+margin:10px !important;
+padding:3px !important
+}

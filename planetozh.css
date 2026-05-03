@@ -1,0 +1,61 @@
+/*        _                  _    ___      _                        
+ *  _ __ | | __ _ _ __   ___| |_ / _ \ ___| |__         ___ ___ ___ 
+ * | '_ \| |/ _` | '_ \ / _ \ __| | | |_  / '_ \       / __/ __/ __|
+ * | |_) | | (_| | | | |  __/ |_| |_| |/ /| | | |  _  | (__\__ \__ \
+ * | .__/|_|\__,_|_| |_|\___|\__|\___//___|_| |_| (_)  \___|___/___/
+ * |_|                                                              
+ *
+ * Style Sheet For planetOzh.com - v5 aka "The Dreamhost Move"
+ ********************************************************************/
+
+#header h1 {
+display: none;
+}
+
+#header h2 {
+display: none;
+}
+
+#footer div div div {
+padding:25px 0px 0 0px;
+width:295px;
+height:80px;
+overflow:hidden;
+background:transparent;
+float:none;
+}
+
+#footer p, #footer a {
+padding:0;
+margin:0;
+color: #9894CA;
+}
+
+#footer strong {
+font-size:10.5pt;
+font-weight:normal;
+}
+
+#footer strong strong {
+font-size:9pt;
+}
+
+#footer strong strong strong {
+font-size:8.5pt;
+}
+
+#footer strong strong strong strong {
+font-size:8pt;
+}
+
+#footer strong strong strong strong strong {
+font-size:7pt;
+}
+
+#footer strong strong strong strong strong strong {
+font-size:6pt;
+}
+
+#twtnadbar {
+display:none;
+}

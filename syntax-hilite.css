@@ -1,0 +1,6 @@
+.storycontent .syntax_hilite {margin:0; width:auto;padding:0 0 10px;text-align:left;}
+.storycontent .syntax_hilite .toolbar{padding:0; width:auto;height:25px;}
+.storycontent .syntax_hilite .toolbar .view-different {float:none; width:auto;}
+.storycontent .syntax_hilite ol {margin-left: 0; padding-left: 30px;}
+.storycontent .syntax_hilite ol, .storycontent .syntax_hilite .pre { font-size:inherit; padding-top: 0}
+

@@ -1,0 +1,102 @@
+/*********************************************************************
+ * planetOzh's Intarnet Explozer Hackxzs. The hell with all this ffs *
+ *********************************************************************/
+
+/**
+#wrap 		 {background:#ff0}
+#header  	 {background:#f00}
+#container {background:#eff}
+#content   {background:#fee}
+#sidebar   {background:#00f}
+#footer  	 {background:#fef}
+/**/
+
+#sidebar div div {
+	padding:0 25px 0 6px;
+}
+
+#sidebar .googlesearch {
+	margin:0;
+	border:1px solid white;
+}
+
+#sidebar div div p,
+#sidebar div div ul,
+#sidebar ul.tabbernav,
+#sidebar .tabberlive .tabbertab,
+#sidebar div div div {
+	width:300px;
+	margin-left:10px;
+}
+
+#sidebar p, #sidebar ul {
+	margin-top:0.5em;
+	margin-bottom:0.5em;
+}
+
+#sidebar p ul {
+	margin-top:0;
+	margin-bottom:0;
+}	
+
+
+#sidebar #cloud div {
+	width:260px;
+}
+
+#myface {display:none}
+
+#sidebar .col1 {margin-left:5px;}
+
+#searchform {margin-left:10px;}
+
+#content .syntax_hilite, #content li .syntax_hilite {
+	overflow:auto;
+}
+
+
+/* Navigation Links
+ ********************************************************************/
+
+#navlist {
+	margin:8px 0 6px 0;
+}
+
+/* just for IE7 */
+*:first-child+html #navlist {
+	margin-top:10px;
+}
+
+
+/* Random Gallery pics
+********************************************************************/
+
+#gallery a {
+	position: relative;
+	
+}
+
+#gallery a:hover {
+	display: block;
+	font-size: 100%;
+	z-index: 1;
+	margin-right:4px;
+}
+
+#gallery a:hover .preview {
+	top: -16px;
+	left: -26px;
+}
+
+#gallery li {
+	position: static;
+	border:0;
+	margin:0;
+}
+
+/* Lightbox
+********************************************************************/
+
+#overlay{
+	filter:alpha(opacity=60);
+}
