@@ -25,7 +25,7 @@
       <div class="site-name">
         <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
           <?php bloginfo( 'name' ); ?>
-        </a> <span class="motto">&dash; a virtual <span class="hilite">.postcard</span> from <span class="hilite">$me</span> to <span class="hilite">myself();</span></span>
+        </a><span class="motto"><em> &dash; </em>a virtual <span class="hilite">.postcard</span> from <span class="hilite">$me</span> to <span class="hilite">myself();</span></span>
       </div>
 
       <nav id="site-navigation" class="main-navigation" aria-label="<?php esc_attr_e( 'Primary navigation', 'planetozh' ); ?>">

@@ -1714,9 +1714,7 @@ article, .about-block, .tag, .pagination-btn,
   #primary-menu li a { padding: 5px 9px; font-size: 13px; }
 
   #hero { padding: 44px 16px 56px; }
-  .hero-stamp { display: none; }
-
-  .site-name .motto { font-size: 35%; flex-shrink: 1;}
+  .hero-stamp { width:64px }
 
   #page { padding: 24px 16px; }
 
@@ -1728,4 +1726,23 @@ article, .about-block, .tag, .pagination-btn,
 
   .post-navigation { flex-direction: column; }
   .post-navigation .nav-next { text-align: left; }
+
+  .site-name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+  }
+  .site-name a {display: block;}
+  .site-name .motto {
+    font-size: 55%;
+    white-space: normal;
+  }
+  .site-name .motto em {display:none}
+}
+
+@media (max-width: 492px) {
+  .hero-stamp {
+    margin-top: 30px;
+  }
 }

@@ -6,7 +6,7 @@
         <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/ozh5.jpg"/>
     </div>
     <span class="about-name">Ozh</span><span class="about-bio"> : WordPress published author,
-          makes YOURLS, codes, is a wine enthusiast and a metal head.<br/>
+          maker of <a href="https://yourls.org/">YOURLS</a>, wine enthusiast and a metal head.
           Read <a href="<?php echo esc_url( get_page_link( get_page_by_path( 'about' ) ) ?: home_url( '/about/' ) ); ?>">more about me</a>.
     </span>
   </div>
