@@ -615,7 +615,7 @@ a.cat.cat-color-6, .cat.cat-color-6 { background: var(--c-6-bg) !important; colo
   font-family: var(--font-sans-serif), sans-serif;
 }
 
-.tag {
+.site-content .tag {
   font-size: 12px;
   font-weight: 500;
   padding: 3px 10px;
@@ -626,7 +626,7 @@ a.cat.cat-color-6, .cat.cat-color-6 { background: var(--c-6-bg) !important; colo
   transition: background 0.15s, color 0.15s;
 }
 
-.tag:hover {
+.site-content .tag:hover {
   background: var(--tag-hover);
   color: var(--text-1);
   text-decoration: none;
