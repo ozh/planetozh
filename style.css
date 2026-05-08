@@ -58,7 +58,7 @@ Tags:        blog, two-columns, right-sidebar, custom-colors, custom-menu, featu
   --tag-hover:   #c8e2f5;
 
   /* Code / blockquote */
-  --code-bg:     #eaf4fb;
+  --code-bg:     #e4dfcb;
   --bq-border:   #1a4fb5;
   --bq-bg:       #e8f4fd;
 
@@ -111,7 +111,7 @@ Tags:        blog, two-columns, right-sidebar, custom-colors, custom-menu, featu
   --tag-text:    #6db6f4;
   --tag-hover:   #142848;
 
-  --code-bg:     #0a1525;
+  --code-bg:     #1b2034;
   --bq-border:   #6db6f4;
   --bq-bg:       #0a1830;
 
@@ -921,7 +921,7 @@ nav.navigation.pagination .nav-links a.next.page-numbers {
   margin-top: 8px;
 }
 
-.entry-content code {
+.entry-content code, .entry-content tt {
   font-family: var(--font-mono), monospace;
   font-size: 0.88em;
   background: var(--code-bg);
