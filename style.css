@@ -213,7 +213,7 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 .hilite {
-  display: inline-block; /* nécessaire pour que transform fonctionne */
+  display: inline-block;
   transition: color 0.3s ease;
 }
 
@@ -311,21 +311,34 @@ img { max-width: 100%; height: auto; display: block; }
 #hero::before {
   content: '';
   position: absolute;
-  width: 400px; height: 400px;
-  border-radius: 50%;
-  background: rgba(16, 8, 132, 0.3);
-  top: -100px; right: 10%;
+  width: 400px;
+  height: 250px;
+  border-radius: 0;
+  background: rgba(16, 8, 132, 0.2);
+  top: -100px;
+  right: 10%;
   pointer-events: none;
+  --r: 20px;
+  aspect-ratio: 1.5;
+  padding: var(--r);
+  mask: radial-gradient(50% 50%,#0000 66%,#000 67%) round var(--r) var(--r)/calc(2*var(--r)) calc(2*var(--r)), conic-gradient(#000 0 0) content-box;
+  transform: rotate(15deg);
 }
 
 #hero::after {
   content: '';
   position: absolute;
-  width: 250px; height: 250px;
-  border-radius: 50%;
-  background: rgba(109, 182, 244, 0.2);
-  bottom: -60px; right: 30%;
+  width: 250px;
+  height: 250px;
+  background: rgba(109, 182, 244, 0.1);
+  bottom: -60px;
+  left: -5%;
   pointer-events: none;
+  --r: 30px;
+  aspect-ratio: 1.5;
+  padding: var(--r);
+  mask: radial-gradient(50% 50%,#0000 66%,#000 67%) round var(--r) var(--r)/calc(2*var(--r)) calc(2*var(--r)), conic-gradient(#000 0 0) content-box;
+  transform: rotate(5deg);
 }
 
 .hero-inner {
@@ -1630,13 +1643,9 @@ article, .about-block, .tag, .pagination-btn,
   filter: drop-shadow(0 7px 16px rgba(0,0,0,0.6));
 }
 
-#hero::before,
-#hero::after {
-  transition: opacity 0.6s ease;
-}
-
-#hero:hover::before { opacity: 0.35; }
-#hero:hover::after  { opacity: 0.2;  }
+#hero::before, #hero::after {transition: opacity 3s ease, transform 1s ease;}
+#hero:hover::before { opacity: 0.05; transform: rotate(21deg)}
+#hero:hover::after  { opacity: 0.02; transform: rotate(-4deg) }
 
 /* Header - not visible by default */
 .header-stamp {
