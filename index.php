@@ -33,7 +33,7 @@
         while ( have_posts() ) :
             the_post();
             get_template_part( 'template-parts/content-post', null, [
-                    'is_featured' => $is_front && $is_first,
+                    'is_featured' => $is_front && $is_first && !has_tag( 'shorties' ),
             ] );
             $is_first = false;
         endwhile;
