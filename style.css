@@ -486,11 +486,24 @@ article.post-card.is-featured .post-title { font-size: 24px; }
 article.post-card.is-featured .post-excerpt { font-size: 18px; }
 
 /* Shorties - content only, no meta */
-article.post-shortie {
-  padding-left: 0;
+#posts article.post-shortie::before {
+  display: block;
+  content: '';
+  position: absolute;
+  left: -6px;
+  width: 12px;
+  background-color: var(--border);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='14'%3E%3Cpath d='M6 0 L6 4 A5 5 0 0 1 6 14 L6 18' stroke='white' stroke-width='2' fill='none'/%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='14'%3E%3Cpath d='M6 0 L6 4 A5 5 0 0 1 6 14 L6 18' stroke='white' stroke-width='2' fill='none'/%3E%3C/svg%3E");
+  -webkit-mask-repeat: repeat-y;
+  mask-repeat: repeat-y;
+  -webkit-mask-size: 12px 16px;
+  mask-size: 12px 16px;
 }
 
-article.post-shortie::before { display: none; }
+#posts article.post-shortie:hover::before {
+  background-color: var(--accent-2);
+}
 
 .shortie-content {
   font-size: 16px;
