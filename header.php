@@ -24,15 +24,16 @@ if ( is_singular() && has_post_thumbnail() ) {
 $og_description = wp_strip_all_tags( $og_description );
 $og_description = mb_substr( $og_description, 0, 200 );
 ?>
-<meta property="og:type"        content="<?php echo is_singular() ? 'article' : 'website'; ?>">
-<meta property="og:site_name"   content="<?php echo esc_attr( $og_site_name ); ?>">
-<meta property="og:title"       content="<?php echo esc_attr( $og_title ); ?>">
-<meta property="og:description" content="<?php echo esc_attr( $og_description ); ?>">
-<meta property="og:url"         content="<?php echo esc_url( $og_url ); ?>">
-<meta property="og:image"       content="<?php echo esc_url( $og_image ); ?>">
+<meta name="fediverse:creator"   content="@ozh@fosstodon.org">
+<meta property="og:type"         content="<?php echo is_singular() ? 'article' : 'website'; ?>">
+<meta property="og:site_name"    content="<?php echo esc_attr( $og_site_name ); ?>">
+<meta property="og:title"        content="<?php echo esc_attr( $og_title ); ?>">
+<meta property="og:description"  content="<?php echo esc_attr( $og_description ); ?>">
+<meta property="og:url"          content="<?php echo esc_url( $og_url ); ?>">
+<meta property="og:image"        content="<?php echo esc_url( $og_image ); ?>">
 <meta property="og:image:width"  content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:locale"      content="<?php echo esc_attr( get_locale() ); ?>">
+<meta property="og:locale"       content="<?php echo esc_attr( get_locale() ); ?>">
 <meta name="twitter:card"        content="summary_large_image">
 <meta name="twitter:title"       content="<?php echo esc_attr( $og_title ); ?>">
 <meta name="twitter:description" content="<?php echo esc_attr( $og_description ); ?>">

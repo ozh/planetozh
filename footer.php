@@ -49,7 +49,7 @@
             foreach ( planetozh_social_fields() as $key => $label ) {
                 $url = get_user_meta( $admin->ID, $key, true );
                 if ( $url ) {
-                    echo '<a href="' . esc_url( $url ) . '">' . esc_html( $label ) . '</a>';
+                    echo '<a rel="me" href="' . esc_url( $url ) . '">' . esc_html( $label ) . '</a>';
                 }
             }
         }
