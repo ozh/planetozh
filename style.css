@@ -76,8 +76,8 @@ Tags:        blog, two-columns, right-sidebar, custom-colors, custom-menu, featu
   --r-lg:  18px;
   --r-xl:  24px;
 
-  --font-sans-serif:  'Plus Jakarta Sans', system-ui, sans-serif;
-  --font-serif: 'Fraunces', Georgia, serif;
+  --font-sans-serif:  'Inter', system-ui, sans-serif;
+  --font-serif: 'Playfair Display', Georgia, serif;
   --font-mono:  'JetBrains Mono', monospace;
 
   --sidebar-w: 260px;
@@ -603,7 +603,7 @@ a.cat.cat-color-6, .cat.cat-color-6 { background: var(--c-6-bg) !important; colo
 
 /* Post title */
 .post-title {
-  font-family: var(--font-sans-serif), sans-serif;
+  font-family: var(--font-serif), serif;
   font-size: 21px;
   font-weight: 700;
   line-height: 1.25;
@@ -622,7 +622,7 @@ a.cat.cat-color-6, .cat.cat-color-6 { background: var(--c-6-bg) !important; colo
   line-height: 1.7;
   margin-bottom: 16px;
   font-weight: 300;
-  font-family: var(--font-serif), serif;
+  font-family: var(--font-sans-serif), sans-serif;
 }
 
 /* Post footer (tags + read more) */
@@ -815,7 +815,7 @@ nav.navigation.pagination .nav-links a.next.page-numbers {
 }
 
 .single-post-title {
-  font-family: var(--font-sans-serif), sans-serif;
+  font-family: var(--font-serif), serif;
   font-size: clamp(28px, 4vw, 44px);
   font-weight: 700;
   line-height: 1.15;
@@ -881,13 +881,13 @@ nav.navigation.pagination .nav-links a.next.page-numbers {
   line-height: 1.7;
   color: var(--text-1);
   font-weight: 300;
-  font-family: var(--font-serif), serif;
+  font-family: var(--font-sans-serif), sans-serif;
 }
 
 .entry-content > * + * { margin-top: 1.4em; }
 
 .entry-content h2 {
-  font-family: var(--font-serif), sans-serif;
+  font-family: var(--font-serif), serif;
   font-size: 26px;
   font-weight: 700;
   margin-top: 2em;
@@ -897,6 +897,7 @@ nav.navigation.pagination .nav-links a.next.page-numbers {
 }
 
 .entry-content h3 {
+  font-family: var(--font-serif), serif;
   font-size: 20px;
   font-weight: 600;
   margin-top: 1.8em;
@@ -905,6 +906,7 @@ nav.navigation.pagination .nav-links a.next.page-numbers {
 }
 
 .entry-content h4 {
+  font-family: var(--font-serif), serif;
   font-size: 17px;
   font-weight: 600;
   margin-top: 1.6em;
@@ -1075,7 +1077,7 @@ nav.navigation.pagination .nav-links a.next.page-numbers {
 }
 
 .comments-title {
-  font-family: var(--font-sans-serif), sans-serif;
+  font-family: var(--font-serif), serif;
   font-size: 22px;
   font-weight: 700;
   color: var(--text-1);
@@ -1104,7 +1106,7 @@ nav.navigation.pagination .nav-links a.next.page-numbers {
 
 .comment-content {
   font-size: 15px;
-  font-family: var(--font-serif), serif;
+  font-family: var(--font-sans-serif), sans-serif;
   color: var(--text-2);
   line-height: 1.7;
 }
@@ -1133,7 +1135,7 @@ nav.navigation.pagination .nav-links a.next.page-numbers {
 }
 
 .comment-reply-title {
-  font-family: var(--font-sans-serif), sans-serif;
+  font-family: var(--font-serif), serif;
   font-size: 20px;
   font-weight: 700;
   color: var(--text-1);
@@ -1158,7 +1160,7 @@ nav.navigation.pagination .nav-links a.next.page-numbers {
   border-radius: var(--r-sm);
   padding: 10px 14px;
   font-size: 15px;
-  font-family: var(--font-sans-serif), serif;
+  font-family: var(--font-sans-serif), sans-serif;
   color: var(--text-1);
   transition: border-color 0.15s;
   margin-bottom: 16px;
@@ -1181,7 +1183,7 @@ nav.navigation.pagination .nav-links a.next.page-numbers {
   padding: 10px 24px;
   font-size: 15px;
   font-weight: 600;
-  font-family: var(--font-sans-serif), serif;
+  font-family: var(--font-sans-serif), sans-serif;
   cursor: pointer;
   transition: opacity 0.15s, box-shadow 0.15s;
   box-shadow: 0 2px 8px rgba(26,79,181,0.3);
