@@ -42,7 +42,7 @@ add_action( 'after_setup_theme', 'planetozh_setup' );
 function planetozh_scripts(): void {
     wp_enqueue_style(
             'planetozh-fonts',
-            'https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,9..144,400;0,9..144,700;1,9..144,400;1,9..144,700&family=Playfair+Display:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=JetBrains+Mono:wght@400&display=swap',
+            'https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,9..144,400;0,9..144,700;1,9..144,400;1,9..144,700&family=Alice:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=JetBrains+Mono:wght@400&display=swap',
             [],
             null
     );
